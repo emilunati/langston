@@ -20,23 +20,23 @@
 	    }
 </style>
 <script>
-	var canvas = document.getElementById("mycanvas");
-    ctx = canvas.getContext('2d');
-	var RIGHT = "right";
-    var LEFT = "left";
-    var UP = "up";
-    var DOWN = "down";
-	var array = new Array(canvasW);
-		for(var i = 0; 1 < canvasW; i++) {
-			//array[x][y] = { x: 0, y: 0 };
-			array[i] = new Array(canvasW);
-		}
-	var canvasW = 500;
-	var canvasH = 500;
-	var direction = UP;
-	var rectSize = 5;
-    var x = canvasW / 2;
-    var y = canvasH / 2;
+var canvas = document.getElementById("mycanvas");
+ctx = canvas.getContext('2d');
+var RIGHT = "right";
+var LEFT = "left";
+var UP = "up";
+var DOWN = "down";
+var array = new Array(canvasW);
+	for(var i = 0; 1 < canvasW; i++) {
+		//array[x][y] = { x: 0, y: 0 };
+		array[i] = new Array(canvasW);
+	}	
+var canvasW = 500;
+var canvasH = 500;
+var direction = UP;
+var rectSize = 5;
+var x = canvasW / 2;
+var y = canvasH / 2;
 	function abdi() {
 	 	if(array[x][y] === 0) {
 	 		if(direction == UP) {
@@ -85,7 +85,7 @@
 	 	}
 
  		ctx.fillStyle="#ff0000";
-        ctx.fillRect(x, y, rectSize, rectSize);
+        	ctx.fillRect(x, y, rectSize, rectSize);
         
 	 	}
 	 }
